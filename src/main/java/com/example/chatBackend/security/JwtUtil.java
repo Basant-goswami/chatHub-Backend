@@ -14,15 +14,7 @@ import io.jsonwebtoken.security.Keys;
 	@Component
 	public class JwtUtil {
 		
-		
-	//	private static String Secret_key="hellohellobolkemereaajubaajudolkediwaniladkihaijodekheterenajrokepiche";
-		
-//		private final String SECRET = "u1jz5wJzMv7Y2lRcjImJTwGq3Roj+PbHq/5Kj3TCYbU="; // should be secure and 256-bit
-//		private final Key secretKey = Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8));
-		
 		private final Key secretKey;
-
-	    // Spring injects the value from application.properties -> jwt.secret
 	    public JwtUtil(@Value("${jwt.Secret_key}") String secret) {
 	        this.secretKey = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
 	    }

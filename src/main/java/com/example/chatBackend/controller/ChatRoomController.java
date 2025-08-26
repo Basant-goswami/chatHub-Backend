@@ -20,8 +20,6 @@ import com.example.chatBackend.service.ChatRoomService;
 
 @RestController
 @RequestMapping("/chatrooms")
-//@CrossOrigin(origins = "http://localhost:5173")
-
 public class ChatRoomController {
 
 	@Autowired 

@@ -24,7 +24,6 @@ import com.example.chatBackend.service.AuthService;
 
 @RestController
 @RequestMapping("api/auth")
-//@CrossOrigin(origins = "http://localhost:5173")
 public class AuthController{
 	
 	@Autowired AuthService authService;
@@ -88,7 +87,7 @@ public class AuthController{
 
 	        user.setFullName(updatedUser.getFullName());
 	        user.setEmail(updatedUser.getEmail());
-	        user.setProfileImageUrl("https://api.dicebear.com/7.x/avataaars/svg?seed=" + user.getUserName());
+	        user.setProfileImageUrl("https://api.dicebear.com/7.x/notionists/svg?seed=" + user.getUserName());
 
 	        authService.save(user);
 	        return ResponseEntity.ok(new UserDTO(user));

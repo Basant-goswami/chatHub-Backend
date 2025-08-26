@@ -21,7 +21,6 @@ import com.example.chatBackend.service.MessageService;
 
 @RestController
 @RequestMapping("/messages")
-//@CrossOrigin(origins = "http://localhost:5173")
 public class MessageController {
 
 	@Autowired

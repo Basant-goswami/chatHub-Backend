@@ -50,7 +50,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:5173", "https://<your-netlify-site>.netlify.app")); // your frontend origin
+        config.setAllowedOrigins(List.of("http://localhost:5173", "https://basant-chathub.netlify.app")); // your frontend origin
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true); // Only if you're using cookies or Authorization headers
